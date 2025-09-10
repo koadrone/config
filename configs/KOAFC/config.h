@@ -61,7 +61,7 @@
 #define GYRO_2_EXTI_PIN      PE3
 #define GYRO_2_ALIGN         CW0_DEG_FLIP
 
-// ACC align
+// ****** Accelerometer orientation ******
 #define DEFAULT_ALIGN_BOARD_YAW         90
 #define DEFAULT_ALIGN_BOARD_PITCH       180
 
@@ -154,29 +154,28 @@
 
 #define DEFAULT_RX_FEATURE   FEATURE_RX_SERIAL
 #define SERIALRX_UART        SERIAL_PORT_UART5
-//serial UART1 2 115200 115200 0 115200
 
 // *************** Battery & Voltage *****************
 #define ADC_VBAT_PIN         PC4
 #define ADC_CURR_PIN         PC5
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE_DEFAULT 102
-#define DEFAULT_CURRENT_METER_SCALE 250
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SCALE     102
+#define DEFAULT_CURRENT_METER_SCALE     250
 
 // *************** Misc ********************
 #define USB_DETECT_PIN       PA9
 
-#define PINIO1_BOX 40
-#define PINIO2_BOX 41
+#define PINIO1_BOX           40
+#define PINIO2_BOX           41
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
 #define BEEPER_INVERTED
-#define BEEPER_PWM_HZ 2500
+#define BEEPER_PWM_HZ        2500
 
-#define SDCARD_DETECT_PIN NONE
-#define SDIO_DEVICE SDIODEV_1
-#define SDIO_USE_4BIT 1
+#define SDCARD_DETECT_PIN    NONE
+#define SDIO_DEVICE          SDIODEV_1
+#define SDIO_USE_4BIT        1
 #define FLASH_CS_PIN         PD4
 
 #define PINIO1_PIN           PD10
